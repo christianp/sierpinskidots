@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <style type="text/css">
+            #diagram {
+                width: 30%;
+                margin: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <svg id="diagram" viewBox = "-55 -5 110 110" xmlns="http://www.w3.org/2000/svg">
+            <circle class="dot" cx="0" cy="10"/>
+        </svg>
+        <p>
+        <a id="download" download="sierpinski.svg">download</a>
+        </p>
+        <div class="controls">
+            <label>Point radius: <input type="range" min=0 max=2 step="0.05" id="radius"></label>
+            <label>No. points: <input type="range" min=0 max=2000 step=1 id="numpoints"></label>
+            <label>No. steps: <input type="range" min=0 max=200 step=1 id="numsteps"></label>
+        </div>
+        <script src="thing.js"></script>
+    </body>
+</html>
